@@ -165,7 +165,7 @@ header .logo{
 #cover{
     background-color: #EDF4F2;
     width: 100%;
-    height: auto;
+    height: 600px;
     padding: 20px 0px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -432,10 +432,16 @@ header .logo{
 .book-img img:hover{
     transform: scale(1.15);
 }
+#grid-parent{
+    display: flex;
+    justify-content: center;
+
+}
 @media (max-width: 1350px) {
     #book-grid{
-        grid-template-columns: auto;
+        grid-template-columns: 700px;
         grid-template-rows: auto;
+        align-items: center;
         /* place-items: center; */
     }
     .author{
