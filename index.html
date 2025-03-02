@@ -12,11 +12,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 
+
 <body>
+    <section id="menu-mobile-parent">
+        <section id="menu-mobile">
+            <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f" id="cross" onclick="hideMobileMenu()"><path d="M256-227.69 227.69-256l224-224-224-224L256-732.31l224 224 224-224L732.31-704l-224 224 224 224L704-227.69l-224-224-224 224Z"/></svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </section>
     <div id="cover">
-        <header id="header">
+        <header id="header-desktop">
             <div class="logo">
                 किताबें
             </div>
@@ -37,9 +54,21 @@
                 </ul>
             </nav>
         </header>
+        <header id="header-mobile">
+            <div class="logo">
+                किताबें
+            </div>
+            <nav>
+                <img src="Images/menu.png" onclick="showMobileMenu()">
+            </nav>
+        </header>
+
         <section id="get-started">
             <p >Step into the Endless Ocean</p>
-            <p >Start Reading <span></span></p>
+            <div id="changing-animation">
+                <p id="changing-animation-p1">Start Reading</p>
+                <p><span></span></p>
+            </div>
             <div>
                 <button>
                     Get Started
@@ -242,5 +271,6 @@
             <p>&copy; किताबें All rights reserved</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
