@@ -11,6 +11,15 @@ let index = 0;
 showSlides();
 
 
+const buttons = Array.from(document.getElementsByTagName("button"))
+console.log(buttons)
+buttons.forEach(element => {
+  element.addEventListener("click", () => {
+    alert("Work in progress");
+  });
+});
+
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("card-img");
