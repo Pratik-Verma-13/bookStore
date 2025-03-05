@@ -611,4 +611,8 @@ footer{
     #book-grid{
         grid-template-columns: 95%;
     }
+    #card-parent{
+        width: 70%;
+        height: 30em;
+    }
 }
